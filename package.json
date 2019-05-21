@@ -7,5 +7,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "foundation-sites": "^6.5.3"
-  }
+  },
+  "repository": "https://github.com/how-we-let-go/report-website",
+  "author": "Rebecca Fox"
 }
