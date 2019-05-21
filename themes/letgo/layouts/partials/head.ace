@@ -1,0 +1,35 @@
+head
+  meta charset="utf-8"
+  meta http-equiv="X-UA-Compatible" content="IE=edge"
+  meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+
+  title How We Let Go
+  meta name="description" content="{{ .Site.Params.description }}"
+  meta name="author" content="{{ .Site.Params.author }}"
+
+  meta property="og:url" content="{{ absURL .URL}}"
+  meta property="og:title" content="{{if .Param "social_title"}}{{.Param "social_title"}}{{else}}{{ .Title }}{{end}}"
+  meta property="og:description" content="{{if .Param "Summary"}}{{.Param "Summary"}}{{else}}{{ .Site.Params.description }}{{end}}"
+  meta property="og:image" content={{"endian-social-1200x630.png" | absURL}}
+
+  meta name="twitter:title" content="{{ .Title }}"
+  meta name="twitter:description" content="{{ .Site.Params.description }}"
+  meta name="twitter:image" content={{"endian-social-1200x630.png" | absURL}}
+  meta name="twitter:card" content="summary_large_image"
+
+  link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"
+  link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"
+  link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"
+  link rel="manifest" href="/manifest.json"
+  link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0C1516"
+  meta name="theme-color" content="#0C1516"
+
+  {{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules/foundation-sites/scss" "node_modules/aos/src/sass")) }}
+  {{if .Param "css"}}
+  {{ $style := resources.Get (.Param "css") | resources.ToCSS $options | resources.Fingerprint }}
+  link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}"
+  {{end}}
+
+  {{ $style := resources.Get "styles/letgo.sass" | resources.ToCSS $options | resources.Fingerprint }}
+  link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}"
+
