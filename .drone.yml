@@ -1,17 +1,41 @@
 pipeline:
 
-    build:
-      image: endian/hugo:1.0.2
+    build-staging:
+      image: endian/hugo:1.0.3
+      environment:
+        - HUGO_ENV="staging"
+        - HUGO_BASEURL="https://staginghowweletgo.org"
+      commands:
+        - make build
+      when:
+        branch: [develop]
+        event: [push, tag]
+
+    build-production:
+      image: endian/hugo:1.0.3
       environment:
         - HUGO_ENV="production"
         - HUGO_BASEURL="https://howweletgo.org"
       commands:
         - make build
       when:
-        branch: [master,develop]
+        branch: [master]
         event: [push, tag]
 
-    deploy:
+    deploy-staging:
+      image: plugins/s3
+      acl: public-read
+      region: "eu-west-2"
+      bucket: "staging.howweletgo.org"
+      source: public/**/*
+      strip_prefix: public/
+      target: /
+      encryption: AES256
+      when:
+        branch: [develop]
+        event: [push, tag]
+
+    deploy-production:
       image: plugins/s3
       acl: public-read
       region: "eu-west-2"
@@ -21,5 +45,5 @@ pipeline:
       target: /
       encryption: AES256
       when:
-        branch: [master,develop]
+        branch: [master]
         event: [push, tag]
