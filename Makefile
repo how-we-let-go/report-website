@@ -1,0 +1,4 @@
+.PHONY: build
+
+build: 
+	@HUGO_BASEURL=$(HUGO_BASEURL) HUGO_ENV=$(HUGO_ENV) hugo

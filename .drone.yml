@@ -1,0 +1,25 @@
+pipeline:
+
+    build:
+      image: endian/hugo:1.0.2
+      environment:
+        - HUGO_ENV="production"
+        - HUGO_BASEURL="https://howweletgo.org"
+      commands:
+        - make build
+      when:
+        branch: [master]
+        event: [push, tag]
+
+    deploy:
+      image: plugins/s3
+      acl: public-read
+      region: "eu-west-2"
+      bucket: "howweletgo.org"
+      source: public/**/*
+      strip_prefix: public/
+      target: /
+      encryption: AES256
+      when:
+        branch: master
+        event: [push, tag]
