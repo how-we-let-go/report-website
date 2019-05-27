@@ -8,7 +8,7 @@ pipeline:
       commands:
         - make build
       when:
-        branch: [master]
+        branch: [master,develop]
         event: [push, tag]
 
     deploy:
@@ -21,5 +21,5 @@ pipeline:
       target: /
       encryption: AES256
       when:
-        branch: master
+        branch: [master,develop]
         event: [push, tag]
