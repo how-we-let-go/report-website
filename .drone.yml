@@ -4,7 +4,7 @@ pipeline:
       image: endian/hugo:1.0.3
       environment:
         - HUGO_ENV="staging"
-        - HUGO_BASEURL="https://staging.howweletgo.org"
+        - HUGO_BASEURL="http://staging.howweletgo.org"
       commands:
         - make build
       when:
