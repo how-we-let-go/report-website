@@ -1,2 +1,72 @@
+// Animated on Scroll
+@import aos
+
+// Foundation
+@import foundation_settings
+@import foundation
++foundation-global-styles
++foundation-typography
+
+// FIXME: move to layouts
+=centered-content
+  padding: 1em
+  max-width: $global-width
+  margin: 0 auto
+
+section
+  +centered-content
+
+#landing
+  background: url(/img/title-background.jpg)
+  background-size: cover
+  background-color: #efefef
+  height: calc(var(--vh, 1vh) * 100)
+
+  video
+    position: absolute
+    top: 0
+    width: 100%
+    mix-blend-mode: color-dodge
+
+  .helmet
+    img
+      position: fixed
+      width: 6em
+      top: 1em
+      left: 1em
+
+  .title
+    display: flex
+    align-items: center
+    justify-content: center
+    height: calc(100% - 2em)
+
+    .wrapper
+      text-align: center
+
+    img
+      width: 50%
+
+    p
+      color: white
+      margin-bottom: 2em
+      margin-top: 2em
+
+    a
+      display: block
+      width: 100%
+      margin-top: 1em
+      border: 1px solid white
+      padding: 1em
+
 p
-  color: blue
+  font-family: 'Cabin', sans-serif
+  line-height: 180% 
+  font-size: 20px 
+  font-weight: 400
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased !important
+  -moz-font-smoothing: antialiased !important
+  text-rendering: optimizelegibility !important
+  letter-spacing: .03em
+  line-height: 1.5em

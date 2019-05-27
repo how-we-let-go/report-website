@@ -1,3 +1,24 @@
 {{ partial "head" }}
 body
-  {{.Content}}
+  #landing
+    video autoplay="" loop=""
+      source src="https://pqina.nl/filepond/static/assets/underwater-grayscale-compressed-small.mp4" type="video/mp4"
+    section
+      .helmet
+        img src="/img/helmet.svg"
+      .title
+        .wrapper 
+          img src="/img/title.svg?2"
+          p A short description of the concept
+          a href="" Watch the video
+          a href="" Listen to the podcast episode
+          a href="" Read the report
+  section
+    {{.Content}}
+
+  script.
+    let calculateHeight = () => {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+    calculateHeight();
