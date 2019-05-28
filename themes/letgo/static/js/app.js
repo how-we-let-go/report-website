@@ -57,36 +57,26 @@
       // Fit renderer to the screen
       if ( options.fullScreen === true ) {
         renderer.view.style.objectFit = 'cover';
+        renderer.view.style.objectPosition = '100% 0%';
         renderer.view.style.width     = '100%';
         renderer.view.style.height    = '100%';
         renderer.view.style.top       = '50%';
         renderer.view.style.left      = '50%';
         renderer.view.style.webkitTransform = 'translate( -50%, -50% ) scale(1.1)';
         renderer.view.style.transform = 'translate( -50%, -50% ) scale(1.1)';           
-      } else {
-        renderer.view.style.maxWidth  = '100%';
-        renderer.view.style.top       = '50%';
-        renderer.view.style.left      = '50%';
-        renderer.view.style.webkitTransform = 'translate( -50%, -50% )';
-        renderer.view.style.transform = 'translate( -50%, -50% )';          
-      }
+      } 
 
       displacementSprite.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT;
 
       // Set the filter to stage and set some default values for the animation
       stage.filters = [displacementFilter];        
 
-      if ( options.autoPlay === false ) {
-        displacementFilter.scale.x = 0;
-        displacementFilter.scale.y = 0;
-      }
-
       displacementSprite.anchor.set(0.5);
       displacementSprite.x = renderer.width / 2;
       displacementSprite.y = renderer.height / 2; 
 
-      displacementSprite.scale.x = 2;
-      displacementSprite.scale.y = 2;
+      displacementSprite.scale.x = 1;
+      displacementSprite.scale.y = 1;
 
       // PIXI tries to fit the filter bounding box to the renderer so we optionally bypass
       displacementFilter.autoFit = options.displaceAutoFit;
@@ -173,7 +163,7 @@ var initCanvasSlideshow = new CanvasSlideshow({
   sprites: spriteImagesSrc,
   displacementImage: 'https://raw.githubusercontent.com/Pierrinho/elephant/master/pattern-clouds.jpg',
   autoPlay: true,
-  autoPlaySpeed: [0, 6],
+  autoPlaySpeed: [0, 4],
   interactive: false,
   displaceAutoFit: true,
 });
