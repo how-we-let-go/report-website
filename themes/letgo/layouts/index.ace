@@ -2,8 +2,8 @@
 body
   #landing
     div id="js-canvas-wrapper" class="canvas-wrapper"
-    video autoplay="" loop=""
-      source src="https://pqina.nl/filepond/static/assets/underwater-grayscale-compressed-small.mp4" type="video/mp4"
+    video autoplay="" loop="" muted=""
+      source src="/video/light-rays.mp4" type="video/mp4"
     section
       .helmet
         img src="/img/helmet.svg"
