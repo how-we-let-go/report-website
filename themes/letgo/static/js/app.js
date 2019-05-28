@@ -167,7 +167,7 @@
 })(); 
 
 var spriteImagesSrc = [];
-spriteImagesSrc.push('http://192.168.86.240:5000/img/title-background.jpg');
+spriteImagesSrc.push('/img/title-background.jpg');
 
 var initCanvasSlideshow = new CanvasSlideshow({
   sprites: spriteImagesSrc,
