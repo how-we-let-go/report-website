@@ -35,3 +35,5 @@ head
   {{ $style := resources.Get "styles/letgo.sass" | resources.ToCSS $options | resources.Fingerprint }}
   link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}"
 
+  {{ partial "javascript" . }}
+
