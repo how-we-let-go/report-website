@@ -11,8 +11,16 @@ body
         .wrapper 
           img src="/img/title.svg?2"
           p A short description of the concept
-          a href="" Watch the video
-          a href="" Listen to the podcast episode
-          a href="" Read the report
+          ul#nav
+            li.video
+              a href="" Watch the video
+            li
+              a href="" Podcast episode
+            li
+              a href="" Read the report
+            li
+              a href="" Get the raw data
+            li
+              a href="" Twitter feed
   section
     {{.Content}}

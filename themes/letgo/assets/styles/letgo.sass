@@ -73,12 +73,27 @@ body
       margin-bottom: 2em
       margin-top: 2em
 
-    a
-      display: block
-      width: 100%
-      margin-top: 1em
-      border: 1px solid white
-      padding: 1em
+    ul#nav
+      +xy-grid
+      list-style: none
+
+      li
+        +xy-cell(6)
+
+        &.video
+          +xy-cell(12)
+
+        a
+          +button
+          display: block
+          width: 100%
+          margin-top: 1em
+          border: 1px solid white
+          background-color: transparent
+          padding: 1em
+
+          &:hover
+            background-color: rgba(255,255,255,0.05)
 
 p
   font-family: 'Cabin', sans-serif
