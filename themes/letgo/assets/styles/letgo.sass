@@ -50,9 +50,13 @@ body
   .helmet
     img
       position: fixed
-      width: 6em
+      width: 2.5em
       top: 1em
-      left: 1em
+      right: 1em
+
+      +breakpoint(large)
+        width: 5em
+        left: 1em
 
   .title
     display: flex
@@ -66,7 +70,8 @@ body
       text-align: center
 
     img
-      width: 50%
+      width: 50vh
+      max-width: 60%
 
     p
       color: white
@@ -78,27 +83,43 @@ body
       list-style: none
 
       li
-        +xy-cell(6)
-
-        &.video
-          +xy-cell(12)
+        +xy-cell(12)
 
         a
           +button
+          position: relative
           display: block
           width: 100%
           margin-top: 1em
-          border: 1px solid white
+          border: 1.5px solid white
           background-color: transparent
-          padding: 1em
+          padding: 1.5em
+          margin-bottom: 0
+          font-size: 1.2em
+
+          +breakpoint(medium)
+            font-size: 1.4em
+            padding: 1.8rem
 
           &:hover
             background-color: rgba(255,255,255,0.05)
 
+          strong
+            font-weight: 600
+            border-bottom: 1px dotted white
+
+          i
+            display: none
+
+            +breakpoint(medium)
+              display: block
+              position: absolute
+              top: 0.8em
+
 p
   font-family: 'Cabin', sans-serif
   line-height: 180% 
-  font-size: 20px 
+  font-size: 18px 
   font-weight: 400
   -moz-osx-font-smoothing: grayscale
   -webkit-font-smoothing: antialiased !important

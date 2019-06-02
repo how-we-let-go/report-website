@@ -6,7 +6,8 @@
   "license": "MIT",
   "dependencies": {
     "aos": "^2.3.4",
-    "foundation-sites": "^6.5.3"
+    "foundation-sites": "^6.5.3",
+    "open-iconic": "^1.1.1"
   },
   "repository": "https://github.com/how-we-let-go/report-website",
   "author": "Rebecca Fox"
