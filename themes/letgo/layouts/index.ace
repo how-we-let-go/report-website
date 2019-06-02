@@ -21,9 +21,6 @@ body
                 i.icono-microphone
                 span <strong>Listen</strong> to the podcast episode
             li
-              a href="" 
+              a href="/report" 
                 i.icono-barChart
                 span <strong>Read</strong> the full report
-  section
-    article
-      {{.Content}}

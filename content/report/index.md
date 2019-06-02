@@ -1,11 +1,13 @@
 +++
 title  = "Home"
 +++
-## Intro
+## Introduction
 
 As I* see it the atheist, humanist and skeptic* community is made up in large part by people who value reason and compassion as methods to understand each other and the world. We celebrate the achievements of science and do our best to make the world a better place through altruism, art and small acts of kindness.
 
+{{% quote cite="someone" %}}
 This attitude is inspired by the realisation that in the absence of any evidence that there is an afterlife or another hidden spiritual dimension to the world, we have to make the most of what we’ve got.
+{{% /quote %}}
 
 But many of us were not born into atheism, we reached this position after a difficult process of unpicking the philosophy, doctrines and culture of the religion we were raised in. There are many accounts from atheists of their experience growing up religious, and many celebratory paeons to the joys of secular life but as I became interested in Street Epistemology*. I wanted to find out more about the process of letting go. Street Epistemology is a conversational method that encourages deep reflection on why we believe what we believe, it prompts people to analyse the epistemology (method of knowing) they used to reach their faith beliefs. It is designed to allow people to begin the process of letting go of beliefs they realise are unfounded.
 

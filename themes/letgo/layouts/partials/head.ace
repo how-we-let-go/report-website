@@ -25,6 +25,7 @@ head
   meta name="theme-color" content="#0C1516"
 
   link href="https://fonts.googleapis.com/css?family=Cabin:400,600&display=swap" rel="stylesheet"
+  link href="https://fonts.googleapis.com/css?family=PT+Sans:400,600&display=swap" rel="stylesheet"
   link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css"
 
   {{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules/foundation-sites/scss" "node_modules/aos/src/sass")) }}

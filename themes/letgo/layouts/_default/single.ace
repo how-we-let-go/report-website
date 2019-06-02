@@ -6,12 +6,18 @@ body
       source src="/video/light-rays.mp4" type="video/mp4"
     section
       .helmet
-        img src="/img/helmet.svg"
+        a href="/"
+          img src="/img/helmet.svg"
       .title
         .wrapper 
-          img src="/img/title.svg?2"
-          p A short description of the concept
+          a href="/"
+            img src="/img/title.svg" alt="How We Let Go"
+          p Full report
           ul#nav
+            li.video
+              a href="" 
+                i.icono-document
+                span <strong>Raw data</strong> for nerds
             li.video
               a href="" 
                 i.icono-youtube
@@ -20,10 +26,9 @@ body
               a href=""
                 i.icono-microphone
                 span <strong>Listen</strong> to the podcast episode
-            li
-              a href="" 
-                i.icono-barChart
-                span <strong>Read</strong> the full report
+          .continue
+            i.icono-caretDown.float
   section
     article
+      em About {{.FuzzyWordCount | lang.NumFmt 0 }} words, or {{.ReadingTime}} minutes reading time
       {{.Content}}

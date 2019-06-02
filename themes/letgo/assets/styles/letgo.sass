@@ -19,12 +19,24 @@ section
 body
   position: relative
 
+@keyframes float 
+	0% 
+		transform: translatey(0px) rotate(90deg)
+	50% 
+		transform: translatey(-0.5em) rotate(90deg)
+	100% 
+		transform: translatey(0px) rotate(90deg)
+
+.float
+  animation: float 1.5s ease-in-out infinite
+
 #landing
   background-size: cover
   background-color: #efefef
   height: calc(var(--vh, 1vh) * 100)
   position: relative;
   display: flex;
+  margin-bottom: 0
 
   .canvas-wrapper
     position: absolute
@@ -57,6 +69,13 @@ body
       +breakpoint(large)
         width: 5em
         left: 1em
+
+  .continue
+    position: absolute
+    left: 0
+    bottom: -0.5em
+    width: 100%
+    text-align: center
 
   .title
     display: flex
@@ -127,3 +146,48 @@ p
   text-rendering: optimizelegibility !important
   letter-spacing: .03em
   line-height: 1.5em
+
+article
+  +breakpoint(medium)
+    padding-top: 3em
+
+  h2
+    margin-top: 2em
+    margin-bottom: 1em
+
+  blockquote
+    display: block;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #eee;
+    padding: 1.5em 0 0.5em;
+    margin: 1.5em 0;
+    position: relative;
+
+    +breakpoint(large)
+      padding-left: 8em
+      padding-right: 8em
+      padding-top: 2em
+      padding-bottom: 1em
+
+  blockquote:before
+    content: '\201C'
+    position: absolute
+    top: 0em
+    left: 50%
+    transform: translate(-50%, -50%)
+    background: #fff
+    width: 3rem
+    height: 2rem
+    font: 6em/1.08em 'PT Sans', sans-serif
+    color: #666
+    text-align: center
+
+  blockquote:after
+    content: "\2014 \2003" attr(cite)
+    display: block
+    text-align: right
+    color: #cc4b37
+
+    +breakpoint(large)
+      text-align: center
