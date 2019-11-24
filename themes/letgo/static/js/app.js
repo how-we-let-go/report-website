@@ -6,7 +6,6 @@
     }
     calculateHeight();
 
-
     window.CanvasSlideshow = function( options ) {
 
         //  SCOPE

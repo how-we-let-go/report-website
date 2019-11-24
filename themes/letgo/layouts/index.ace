@@ -5,22 +5,61 @@ body
     video autoplay="" loop="" muted=""
       source src="/video/light-rays.mp4" type="video/mp4"
     section
-      .helmet
-        img src="/img/helmet.svg"
       .title
         .wrapper 
-          img src="/img/title.svg?2"
-          p A short description of the concept
+          h1 alt="How we let go"
+            img src="/img/title.svg?2"
+          h2 A short description of the concept
           ul#nav
             li.video
-              a href="" 
-                i.icono-youtube
+              a href="https://www.youtube.com/watch?v=XSGBVzeBUbk" data-lity=""
                 span <strong>Watch</strong> the video
             li
               a href=""
-                i.icono-microphone
                 span <strong>Listen</strong> to the podcast episode
             li
               a href="/report" 
-                i.icono-barChart
                 span <strong>Read</strong> the full report
+          .continue
+            i.fa.fa-chevron-down.float
+  section
+    article#main
+      h3 
+        span Some summary title
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      .twitter
+        a href="FIXME"
+          i.fa.fa-twitter
+          span follow the Twitter feed!
+  section.authors
+    article#anthony
+      h3
+        img src="/anthony.jpg" alt="Anthony Magnabosco"
+        span Anthony Magnabosco
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      p.links
+        a href="https://twitter.com/magnabosco" target="_blank"
+          i.fa.fa-twitter
+        a href="https://instagram.com/rebeccaonpaper" target="_blank"
+          i.fa.fa-instagram
+        a href="https://www.youtube.com/channel/UCocP40a_UvRkUAPLD5ezLIQ" target="_blank"
+          i.fa.fa-youtube
+    article#rebecca
+      h3 
+        img src="/rebecca.jpg" alt="Anthony Magnabosco"
+        span Rebecca Fox
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      p.links
+        a href="https://twitter.com/rebeccaonpaper" target="_blank"
+          i.fa.fa-twitter
+        a href="https://instagram.com/rebeccaonpaper" target="_blank"
+          i.fa.fa-instagram
+        a href="https://www.youtube.com/channel/UCsAvzf-XD53ebVyH1liNZtQ" target="_blank"
+          i.fa.fa-youtube
+        a href="https://seekerandskeptic.com/" target="_blank"
+          i.fa.fa-rss
+  #footer
+    section
+      img src="/img/helmet.svg"
+      p It's okay not to know.
+
