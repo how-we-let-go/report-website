@@ -8,14 +8,14 @@ body
       .title
         .wrapper 
           h1 alt="How we let go"
-            img src="/img/title.svg?2"
-          h2 A short description of the concept
+            img src="/img/title.svg?2" alt="How we let go"
+            span (of faith beliefs)
           ul#nav
             li.video
               a href="https://www.youtube.com/watch?v=XSGBVzeBUbk" data-lity=""
                 span <strong>Watch</strong> the video
             li
-              a href=""
+              a href="http://tinyurl.com/how-we-let-go" target="_blank"
                 span <strong>Listen</strong> to the podcast episode
             li
               a href="/report" 
@@ -25,8 +25,9 @@ body
   section
     article#main
       h3 
-        span Some summary title
-      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        span {{.Site.Params.Description}}
+      p Eight hundred and fifty people answered thirty-six in-depth questions about their process of letting go of their faith beliefs. The answers provided useful data for atheist advocacy, but it’s not just data: the honest, moving and often darkly humorous comments inspired artistic and philosophical exploration. 
+      p Together we have created a portrait of the atheist community which will help us know ourselves and each other better.
       .twitter
         a href="FIXME"
           i.fa.fa-twitter
@@ -36,20 +37,24 @@ body
       h3
         img src="/anthony.jpg" alt="Anthony Magnabosco"
         span Anthony Magnabosco
-      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      p.links
+      p Anthony is a promoter and practitioner of <a href="https://streetepistemology.com/" target="_blank">Street Epistemology</a>, a conversational technique that helps people evaluate their beliefs. He has recorded and uploaded hundreds of conversations to his <a href="https://www.youtube.com/channel/UCocP40a_UvRkUAPLD5ezLIQ" target="_blank">YouTube channel</a> which demonstrate how to effectively and compassionately explore someone’s beliefs. 
+      p Anthony is the founder and Executive Director of <a href="https://streetepistemologyinternational.org/" target="_blank">Street Epistemology International</a> and has given numerous talks and workshops on Street Epistemology worldwide.
+      .links
         a href="https://twitter.com/magnabosco" target="_blank"
           i.fa.fa-twitter
-        a href="https://instagram.com/rebeccaonpaper" target="_blank"
+        a href="https://www.instagram.com/magnabosco210/?hl=en" target="_blank"
           i.fa.fa-instagram
         a href="https://www.youtube.com/channel/UCocP40a_UvRkUAPLD5ezLIQ" target="_blank"
           i.fa.fa-youtube
+        a href="https://anthonymagnabosco.com/" target="_blank"
+          i.fa.fa-link
     article#rebecca
       h3 
         img src="/rebecca.jpg" alt="Anthony Magnabosco"
         span Rebecca Fox
-      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      p.links
+      p Rebecca is an artist and skeptic who combines both passions in her comics. Her most recent book <a href="https://www.amazon.com/How-Reasonable-Someone-Tried-Everything-ebook/dp/B07TFPDKBY" target="_blank"><em>How to Be Reasonable (by someone who tried everything else)</em></a> is a quirky primer on skepticism that received enthusiastic approval from leaders in the skeptical movement. 
+      p Rebecca co-hosts the podcast <a href="https://seekerandskeptic.com/" target="_blank">The Seeker and the Skeptic</a> in which she practices the art of conversation with her friend Cat who approaches the fringe topics they cover from a different perspective.
+      .links
         a href="https://twitter.com/rebeccaonpaper" target="_blank"
           i.fa.fa-twitter
         a href="https://instagram.com/rebeccaonpaper" target="_blank"
@@ -58,8 +63,10 @@ body
           i.fa.fa-youtube
         a href="https://seekerandskeptic.com/" target="_blank"
           i.fa.fa-rss
+        a href="https://rebeccaonpaper.com/" target="_blank"
+          i.fa.fa-link
   #footer
     section
       img src="/img/helmet.svg"
-      p It's okay not to know.
+      p It's okay not to know
 

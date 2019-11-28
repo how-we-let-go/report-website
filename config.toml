@@ -1,5 +1,9 @@
 baseURL       = "http://howweletgo.org/"
 languageCode  = "en-gb"
-title         = "My New Hugo Site"
+title         = "How we let go (of faith beliefs)"
 theme         = "letgo"
 enableGitInfo = true
+
+[params]
+description    ="A data-driven portrait of the process of letting go"
+
