@@ -10,7 +10,7 @@ head
   meta property="og:url" content="{{ absURL .URL}}"
   meta property="og:title" content="{{if .Param "social_title"}}{{.Param "social_title"}}{{else}}{{ .Title }}{{end}}"
   meta property="og:description" content="{{if .Param "Summary"}}{{.Param "Summary"}}{{else}}{{ .Site.Params.description }}{{end}}"
-  meta property="og:image" content={{"endian-social-1200x630.png" | absURL}}
+  meta property="og:image" content={{"img/social-1200x630.png" | absURL}}
 
   meta name="twitter:title" content="{{ .Title }}"
   meta name="twitter:description" content="{{ .Site.Params.description }}"

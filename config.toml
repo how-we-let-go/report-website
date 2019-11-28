@@ -1,4 +1,4 @@
-baseURL       = "http://howweletgo.org/"
+baseURL       = "https://howweletgo.org/"
 languageCode  = "en-gb"
 title         = "How we let go (of faith beliefs)"
 theme         = "letgo"
