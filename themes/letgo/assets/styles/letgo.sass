@@ -229,7 +229,7 @@ article
       margin-top: 0
 
 
-  .twitter
+  .ctas
     text-align: center
     margin-bottom: 2em
     a
@@ -244,10 +244,21 @@ article
       border-radius: 2em
       margin-top: 1em
       margin-bottom: 1em
-
+      margin-left: 0.25em
+      margin-right: 0.25em
       transition: 0.25s
-      &:hover 
-          background-color: #00aced
+
+      &.twitter:hover 
+         background-color: #00aced
+
+      &.podcast:hover 
+         background-color: #eb8231
+
+      &.video:hover 
+         background-color: #e64a41
+
+      &.report:hover 
+         background-color: #5a32a3
 
       i
         margin-right: 0.5em
@@ -303,53 +314,26 @@ article
           color: white
           margin-right: 0.5em
           font-size: 1.5em
-
-      .fa-facebook 
-         padding: 10px 14px
-         transition: .5s
-         background-color: #322f30
-
-      .fa-facebook:hover 
-         background-color: #3d5b99
-
-      .fa-twitter 
-          padding: 10px 12px
-          transition: .5s
-          background-color: #322f30
-
-          &:hover 
-              background-color: #00aced
-
-      .fa-rss 
           padding: 10px 14px
           transition: .5s
           background-color: #322f30
 
-      .fa-rss:hover 
-          background-color: #eb8231
+        .fa-facebook:hover 
+           background-color: #3d5b99
 
-      .fa-youtube 
-          padding: 10px 14px
-          transition: .5s
-          background-color: #322f30
+        .fa-twitter:hover 
+            background-color: #00aced
 
-      .fa-youtube:hover 
-          background-color: #e64a41
+        .fa-rss:hover 
+            background-color: #eb8231
 
-      .fa-instagram
-          padding: 10px 14px
-          transition: .5s
-          background-color: #322f30
+        .fa-youtube:hover 
+            background-color: #e64a41
 
-          &:hover 
+        .fa-instagram:hover 
             background-color: #0073a4
 
-      .fa-link
-          padding: 10px 14px
-          transition: .5s
-          background-color: #322f30
-
-          &:hover 
+        .fa-link:hover 
             background-color: #5a32a3
 
 #footer

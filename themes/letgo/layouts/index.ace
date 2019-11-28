@@ -12,13 +12,13 @@ body
             span (of faith beliefs)
           ul#nav
             li.video
-              a href="https://www.youtube.com/watch?v=XSGBVzeBUbk" data-lity=""
+              a href="{{.Params.videoUrl}}" data-lity=""
                 span <strong>Watch</strong> the video
             li
-              a href="http://tinyurl.com/how-we-let-go" target="_blank"
+              a href="{{.Params.podcastUrl}}" target="_blank"
                 span <strong>Listen</strong> to the podcast episode
             li
-              a href="/report" 
+              a href="{{.Params.reportUrl}}" 
                 span <strong>Read</strong> the full report
           .continue
             i.fa.fa-chevron-down.float
@@ -28,10 +28,19 @@ body
         span {{.Site.Params.Description}}
       p Eight hundred and fifty people answered thirty-six in-depth questions about their process of letting go of their faith beliefs. The answers provided useful data for atheist advocacy, but it’s not just data: the honest, moving and often darkly humorous comments inspired artistic and philosophical exploration. 
       p Together we have created a portrait of the atheist community which will help us know ourselves and each other better.
-      .twitter
-        a href="FIXME"
+      .ctas
+        a.video href="{{.Params.videoUrl}}" data-lity=""
+          i.fa.fa-youtube
+          span Video
+        a.podcast href="{{.Params.podcastUrl}}" target="_blank"
+          i.fa.fa-rss
+          span Podcast
+        a.report href="{{.Params.reportUrl}}" target="_blank"
+          i.fa.fa-book
+          span Report
+        a.twitter href="{{.Params.twitterUrl}}" target="_blank"
           i.fa.fa-twitter
-          span follow the Twitter feed!
+          span follow the Twitter feed
   section.authors
     article#anthony
       h3
@@ -46,7 +55,7 @@ body
           i.fa.fa-instagram
         a href="https://www.youtube.com/channel/UCocP40a_UvRkUAPLD5ezLIQ" target="_blank"
           i.fa.fa-youtube
-        a href="https://anthonymagnabosco.com/" target="_blank"
+        a href="https://anthonymagnabosco.com" target="_blank"
           i.fa.fa-link
     article#rebecca
       h3 
