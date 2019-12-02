@@ -40,7 +40,7 @@ body
           span Report
         a.twitter href="{{.Params.twitterUrl}}" target="_blank"
           i.fa.fa-twitter
-          span follow the Twitter feed
+          span Follow the Twitter feed
   section.authors
     article#anthony
       h3
@@ -62,7 +62,7 @@ body
         img src="/rebecca.jpg" alt="Anthony Magnabosco"
         span Rebecca Fox
       p Rebecca is an artist and skeptic who combines both passions in her comics. Her most recent book <a href="https://www.amazon.com/How-Reasonable-Someone-Tried-Everything-ebook/dp/B07TFPDKBY" target="_blank"><em>How to Be Reasonable (by someone who tried everything else)</em></a> is a quirky primer on skepticism that received enthusiastic approval from leaders in the skeptical movement. 
-      p Rebecca co-hosts the podcast <a href="https://seekerandskeptic.com/" target="_blank">The Seeker and the Skeptic</a> in which she practices the art of conversation with her friend Cat who approaches the fringe topics they cover from a different perspective.
+      p Rebecca co-hosts the podcast <a href="https://seekerandskeptic.com/" target="_blank">The Seeker and the Skeptic</a> in which she practices the art of conversation with a friend who approaches the fringe topics they cover from a different perspective.
       .links
         a href="https://twitter.com/rebeccaonpaper" target="_blank"
           i.fa.fa-twitter
