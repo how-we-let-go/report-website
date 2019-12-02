@@ -26,7 +26,7 @@ body
     article#main
       h3 
         span {{.Site.Params.Description}}
-      p Eight hundred and fifty people answered thirty-six in-depth questions about their process of letting go of their faith beliefs. The answers provided useful data for atheist advocacy, but it’s not just data: the honest, moving and often darkly humorous comments inspired artistic and philosophical exploration. 
+      p Eight hundred and fifty people answered thirty-six in-depth questions about their process of letting go of their faith beliefs. Their answers provide useful data for atheist advocacy, but it’s not just data: the honest, moving and often darkly humorous comments inspire artistic and philosophical exploration. 
       p Together we have created a portrait of the atheist community which will help us know ourselves and each other better.
       .ctas
         a.video href="{{.Params.videoUrl}}" data-lity=""
@@ -40,40 +40,62 @@ body
           span Report
         a.twitter href="{{.Params.twitterUrl}}" target="_blank"
           i.fa.fa-twitter
-          span Follow the Twitter feed
-  section.authors
-    article#anthony
-      h3
-        img src="/anthony.jpg" alt="Anthony Magnabosco"
-        span Anthony Magnabosco
-      p Anthony is a promoter and practitioner of <a href="https://streetepistemology.com/" target="_blank">Street Epistemology</a>, a conversational technique that helps people evaluate their beliefs. He has recorded and uploaded hundreds of conversations to his <a href="https://www.youtube.com/channel/UCocP40a_UvRkUAPLD5ezLIQ" target="_blank">YouTube channel</a> which demonstrate how to effectively and compassionately explore someone’s beliefs. 
-      p Anthony is the founder and Executive Director of <a href="https://streetepistemologyinternational.org/" target="_blank">Street Epistemology International</a> and has given numerous talks and workshops on Street Epistemology worldwide.
-      .links
-        a href="https://twitter.com/magnabosco" target="_blank"
-          i.fa.fa-twitter
-        a href="https://www.instagram.com/magnabosco210/?hl=en" target="_blank"
-          i.fa.fa-instagram
-        a href="https://www.youtube.com/channel/UCocP40a_UvRkUAPLD5ezLIQ" target="_blank"
-          i.fa.fa-youtube
-        a href="https://anthonymagnabosco.com" target="_blank"
-          i.fa.fa-link
-    article#rebecca
-      h3 
-        img src="/rebecca.jpg" alt="Anthony Magnabosco"
-        span Rebecca Fox
-      p Rebecca is an artist and skeptic who combines both passions in her comics. Her most recent book <a href="https://www.amazon.com/How-Reasonable-Someone-Tried-Everything-ebook/dp/B07TFPDKBY" target="_blank"><em>How to Be Reasonable (by someone who tried everything else)</em></a> is a quirky primer on skepticism that received enthusiastic approval from leaders in the skeptical movement. 
-      p Rebecca co-hosts the podcast <a href="https://seekerandskeptic.com/" target="_blank">The Seeker and the Skeptic</a> in which she practices the art of conversation with a friend who approaches the fringe topics they cover from a different perspective.
-      .links
-        a href="https://twitter.com/rebeccaonpaper" target="_blank"
-          i.fa.fa-twitter
-        a href="https://instagram.com/rebeccaonpaper" target="_blank"
-          i.fa.fa-instagram
-        a href="https://www.youtube.com/channel/UCsAvzf-XD53ebVyH1liNZtQ" target="_blank"
-          i.fa.fa-youtube
-        a href="https://seekerandskeptic.com/" target="_blank"
-          i.fa.fa-rss
-        a href="https://rebeccaonpaper.com/" target="_blank"
-          i.fa.fa-link
+          span Twitter
+
+  section#help
+    h3 Help with letting go
+    .ctas
+      a.faithtofaithless href="https://www.faithtofaithless.com/" target="_blank"
+        img src="/logos/faith-to-faithless.png"
+      a.recoveringfromreligion href="https://www.recoveringfromreligion.org/" target="_blank"
+        img src="/logos/recovering-from-religion.svg"
+      a.exmuslims href="https://exmuslims.org/" target="_blank"
+        img src="/logos/exmuslims.png"
+      a.facebook href="#secret-facebook-group" data-lity=""
+        img src="/logos/emerging-faith.svg"
+
+    #secret-facebook-group.lity-hide
+      section
+        p Emerging Faith is a "secret" Facebook group (no one will be able to see your activity there unless they too are also members) for people who no longer believe in any Gods but are surrounded by loved ones who still do. 
+        p Simply email <a href="mailto:emergingfaithhelp@gmail.com">emergingfaithhelp@gmail.com</a> to begin the vetting process.
+
+  section#authors
+    h3 About the authors
+    .wrapper
+      article#anthony
+        h3
+          img src="/anthony.jpg" alt="Anthony Magnabosco"
+          span Anthony Magnabosco
+        p Anthony is a promoter and practitioner of <a href="https://streetepistemology.com/" target="_blank">Street Epistemology</a>, a conversational technique that helps people evaluate their beliefs. He has recorded and uploaded hundreds of conversations to his <a href="https://www.youtube.com/channel/UCocP40a_UvRkUAPLD5ezLIQ" target="_blank">YouTube channel</a> which demonstrate how to effectively and compassionately explore someone’s beliefs. 
+        p Anthony is the founder and Executive Director of <a href="https://streetepistemologyinternational.org/" target="_blank">Street Epistemology International</a> and has given numerous talks and workshops on Street Epistemology worldwide.
+        .links
+          a href="https://twitter.com/magnabosco" target="_blank"
+            i.fa.fa-twitter
+          a href="https://www.instagram.com/magnabosco210/?hl=en" target="_blank"
+            i.fa.fa-instagram
+          a href="https://www.youtube.com/channel/UCocP40a_UvRkUAPLD5ezLIQ" target="_blank"
+            i.fa.fa-youtube
+          a href="https://anthonymagnabosco.com" target="_blank"
+            i.fa.fa-link
+          a href="https://www.facebook.com/magnabosco210/" target="_blank"
+            i.fa.fa-facebook
+      article#rebecca
+        h3 
+          img src="/rebecca.jpg" alt="Anthony Magnabosco"
+          span Rebecca Fox
+        p Rebecca is an artist and skeptic who combines both passions in her comics. Her most recent book <a href="https://www.amazon.com/How-Reasonable-Someone-Tried-Everything-ebook/dp/B07TFPDKBY" target="_blank"><em>How to Be Reasonable (by someone who tried everything else)</em></a> is a quirky primer on skepticism that received enthusiastic approval from leaders in the skeptical movement. 
+        p Rebecca co-hosts the podcast <a href="https://seekerandskeptic.com/" target="_blank">The Seeker and the Skeptic</a> in which she practices the art of conversation with a friend who approaches the fringe topics they cover from a different perspective.
+        .links
+          a href="https://twitter.com/rebeccaonpaper" target="_blank"
+            i.fa.fa-twitter
+          a href="https://instagram.com/rebeccaonpaper" target="_blank"
+            i.fa.fa-instagram
+          a href="https://www.youtube.com/channel/UCsAvzf-XD53ebVyH1liNZtQ" target="_blank"
+            i.fa.fa-youtube
+          a href="https://seekerandskeptic.com/" target="_blank"
+            i.fa.fa-rss
+          a href="https://rebeccaonpaper.com/" target="_blank"
+            i.fa.fa-link
   #footer
     section
       img src="/img/helmet.svg"
