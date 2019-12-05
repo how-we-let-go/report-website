@@ -18,7 +18,7 @@ body
               a href="{{.Params.podcastUrl}}" target="_blank"
                 span <strong>Listen</strong> to the podcast episode
             li
-              a href="{{.Params.reportUrl}}" 
+              a href="{{.Params.reportUrl}}" target="_blank"
                 span <strong>Read</strong> the full report
           .continue
             i.fa.fa-chevron-down.float
