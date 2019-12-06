@@ -41,6 +41,9 @@ body
         a.twitter href="{{.Params.twitterUrl}}" target="_blank"
           i.fa.fa-twitter
           span Twitter
+        a.twitter href="{{.Params.dataUrl}}" target="_blank"
+          i.fa.fa-database
+          span Data for nerds
 
   section#help
     h3 Help with letting go
